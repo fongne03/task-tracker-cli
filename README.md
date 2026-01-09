@@ -1,59 +1,90 @@
-# task-tracker-cli
+␠# Task Tracker CLI
 
-Task Tracker CLI is a simple command-line application built in Java that allows users to track and manage their tasks. The application supports adding, updating, deleting, and listing tasks, as well as marking tasks as todo, in progress, or done. All tasks are stored locally in a JSON file, making the data persistent between program runs. This project is intended to practice command-line interfaces, file system operations, and basic data persistence without using external libraries.
+A simple command-line task tracker built in Java.
+This application allows users to manage tasks and track their progress using a local JSON file.
 
-# How to Run the Project
+␠# Features
 
-Make sure you have Java JDK 8 or higher installed on your system. You can verify this by running java -version in your command line.
+Add tasks
+Update tasks
+Delete tasks
+Mark tasks as todo, in-progress, or done
+List all tasks
+List tasks by status
+Persistent storage using a JSON file
 
-# Clone the project repository from GitHub using the following command:
+␠# Requirements
+
+Java JDK 8 or higher
+Command Line (CMD, PowerShell, or Terminal)
+
+␠# How to Run the Project
+
+␠# Clone the Repository
+
 git clone https://github.com/fongne03/task-tracker-cli.git
 
-# Navigate into the project directory:
 cd task-tracker-cli
 
-# Compile the Java source files:
-**javac *.java**
+␠# Compile the Project
 
-This will generate the required .class files.
+javac *.java
 
-# Run the application:
-**java TaskCli**
+␠# Run the Application
 
-**Usage Examples
-**
-- To add a new task:
-**java TaskCli add "Buy groceries"**
+java TaskCli
 
-- To list all tasks:
-**java TaskCli list**
+␠# Usage Examples
 
-- To list tasks by status:
-**java TaskCli list todo
+␠# Add a Task
+
+java TaskCli add "Buy groceries"
+
+␠# List All Tasks
+
+java TaskCli list
+
+␠# List Tasks by Status
+
+java TaskCli list todo
 java TaskCli list in-progress
-java TaskCli list done**
+java TaskCli list done
 
-To mark a task as in progress:
-**java TaskCli mark-in-progress 1**
+␠# Mark a Task as In Progress
 
-To mark a task as done:
-**java TaskCli mark-done 1**
+java TaskCli mark-in-progress 1
 
-To update a task:
-**java TaskCli update 1 "Buy groceries and cook dinner"**
+␠# Mark a Task as Done
 
-To delete a task:
-**java TaskCli delete 1**
+java TaskCli mark-done 1
 
-# Data Storage
+␠# Update a Task
 
-All tasks are stored in a local file named tasks.json located in the project directory. The file is automatically created if it does not already exist. Task data includes an ID, description, status, creation timestamp, and last updated timestamp.
+java TaskCli update 1 "Buy groceries and cook dinner"
 
-# Project Page URL
+␠# Delete a Task
+
+java TaskCli delete 1
+
+␠# Data Storage
+
+Tasks are stored in a file named tasks.json in the project directory.
+The file is automatically created if it does not exist.
+
+Each task includes:
+ID
+Description
+Status
+Created timestamp
+Updated timestamp
+
+␠# Project Page
 
 GitHub Repository:
 https://github.com/fongne03/task-tracker-cli
 
-# Notes
+␠# Notes
 
-This project does not use any external libraries or frameworks. All file operations are handled using Java’s native file system APIs. The project is designed as a learning exercise to strengthen understanding of Java, command-line interfaces, and basic persistence.
+No external libraries or frameworks are used
+All file operations use Java’s native filesystem APIs
+This project is intended for learning and practice
