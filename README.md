@@ -104,6 +104,9 @@ Each task includes:
 
 ## Project Page
 
+**More project details at:** 
+https://roadmap.sh/projects/task-tracker
+
 **GitHub Repository:**
 [https://github.com/fongne03/task-tracker-cli](https://github.com/fongne03/task-tracker-cli)
 
@@ -112,3 +115,5 @@ Each task includes:
 - No external libraries or frameworks are used.
 - All file operations use Java’s native filesystem APIs.
 - This project is intended for learning and practice.
+
+
